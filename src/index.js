@@ -4,5 +4,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let contacts = {
+    name: 'Nick',
+    phone: '232-233-2323',
+}
+
+ReactDOM.render(<App contacts={contacts}/>, document.getElementById('root'));
 registerServiceWorker();
